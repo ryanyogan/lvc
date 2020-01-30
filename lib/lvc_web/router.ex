@@ -18,10 +18,10 @@ defmodule LvcWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-  end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", LvcWeb do
-  #   pipe_through :api
-  # end
+    live "/examples/static-title", StaticTitleLiveView
+    live "/examples/assigns-title", AssignsTitleLiveView
+    live "/examples/stateless-title", StatelessComponentLiveView
+    live "/examples/stateful-title", StatefulComponentLiveView
+  end
 end
