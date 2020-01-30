@@ -15,7 +15,10 @@ config :lvc, LvcWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "VyOtWRWAGJznB9ARPCJgDUs+00cSrTPdniHHLU1fiZ5nKljm0zkJiuxUdVPLaVHP",
   render_errors: [view: LvcWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Lvc.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Lvc.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "yhbpkXyPNLSe8K/BY5Vf9B6lARq1Jgt2"
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,

@@ -23,6 +23,7 @@ defmodule LvcWeb do
 
       import Plug.Conn
       import LvcWeb.Gettext
+      import Phoenix.LiveView.Controller
       alias LvcWeb.Router.Helpers, as: Routes
     end
   end
@@ -41,6 +42,7 @@ defmodule LvcWeb do
 
       import LvcWeb.ErrorHelpers
       import LvcWeb.Gettext
+      import Phoenix.LiveView.Helpers
       alias LvcWeb.Router.Helpers, as: Routes
     end
   end
@@ -50,6 +52,7 @@ defmodule LvcWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Router
     end
   end
 
