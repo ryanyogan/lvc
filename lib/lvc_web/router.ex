@@ -23,5 +23,8 @@ defmodule LvcWeb.Router do
     live "/examples/assigns-title", AssignsTitleLiveView
     live "/examples/stateless-title", StatelessComponentLiveView
     live "/examples/stateful-title", StatefulComponentLiveView
+    live "/examples/stateful-preload", StatefulPreloadComponentLiveView
+    live "/examples/stateful-self", StatefulSendSelfComponentLiveView
+    live "/examples/stateful-blocks", ComponentBlocksLiveView
   end
 end
